@@ -1,0 +1,163 @@
+<nav class="navbar navbar-expand-lg dark - bg-dark ">
+  <div class="container-fluid">
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" style="color: white;" routerLink="/Home">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link "   style="color: white;"routerLink="/Aboutme">About Section</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " style="color: white;" routerLink="/skills">Technical skills  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" routerLink="/project"> Projects </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="color: white;" routerLink="/blog"> Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a  class="nav-link"style=" ;color: white;" routerLink="/contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" style="    color: white;" routerLink="/resume">Resume</a>
+                </li>
+                  <button mat-icon-button class="example-icon favorite-icon"
+                      aria-label="Example icon-button with heart icon">
+                      <mat-icon style="    margin-left: 700px;;color: white;" (click)="logout()">logout</mat-icon>
+                  </button>
+          </ul>
+      </div>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="col-12 col-sm-12 col-md-12">
+    <div class="card">
+      <div class="card-header">
+        <h4> My Project Team</h4>
+      </div>
+      <div class="card-body">
+        <div class="media-list position-relative">
+          <div class="table-responsive" id="project-team-scroll" tabindex="1"
+            style="height: 400px; overflow: hidden; outline: none;">
+            <table class="table table-hover table-xl mb-0">
+              <thead>
+                <tr>
+                  <th>Project Name</th>
+                  <th>Employees</th>
+                  <th>Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="text-truncate">Project X</td>
+                  <td class="text-truncate">
+                    <ul class="list-unstyled order-list m-b-0">
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Wildan Ahdian"></li>
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="John Deo"></li>
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Sarah Smith"></li>
+                      <li class="avatar avatar-sm"><span class="badge badge-primary">+3</span></li>
+                    </ul>
+                  </td>
+                  <td class="text-truncate">$8999</td>
+                </tr>
+                <tr>
+                  <td class="text-truncate">Project AB2</td>
+                  <td class="text-truncate">
+                    <ul class="list-unstyled order-list m-b-0">
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Wildan Ahdian"></li>
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="John Deo"></li>
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Sarah Smith"></li>
+                      <li class="avatar avatar-sm"><span class="badge badge-primary">+1</span></li>
+                    </ul>
+                  </td>
+                  <td class="text-truncate">$5550</td>
+                </tr>
+                <tr>
+                  <td class="text-truncate">Project DS3</td>
+                  <td class="text-truncate">
+                    <ul class="list-unstyled order-list m-b-0">
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Wildan Ahdian"></li>
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Sarah Smith"></li>
+                      <li class="avatar avatar-sm"><span class="badge badge-primary">+4</span></li>
+                    </ul>
+                  </td>
+                  <td class="text-truncate">$9000</td>
+                </tr>
+                <tr>
+                  <td class="text-truncate">Project XCD</td>
+                  <td class="text-truncate">
+                    <ul class="list-unstyled order-list m-b-0">
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Wildan Ahdian"></li>
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="John Deo"></li>
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Sarah Smith"></li>
+                      <li class="avatar avatar-sm"><span class="badge badge-primary">+2</span></li>
+                    </ul>
+                  </td>
+                  <td class="text-truncate">$7500</td>
+                </tr>
+                <tr>
+                  <td class="text-truncate">Project Z2</td>
+                  <td class="text-truncate">
+                    <ul class="list-unstyled order-list m-b-0">
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar8.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Wildan Ahdian"></li>
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Sarah Smith"></li>
+                      <li class="avatar avatar-sm"><span class="badge badge-primary">+3</span></li>
+                    </ul>
+                  </td>
+                  <td class="text-truncate">$8500</td>
+                </tr>
+                <tr>
+                  <td class="text-truncate">Project GTe</td>
+                  <td class="text-truncate">
+                    <ul class="list-unstyled order-list m-b-0">
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Wildan Ahdian"></li>
+                      <li class="team-member team-member-sm"><img class="rounded-circle"
+                          src="https://bootdey.com/img/Content/avatar/avatar5.png" alt="user" data-toggle="tooltip"
+                          title="" data-original-title="Sarah Smith"></li>
+                      <li class="avatar avatar-sm"><span class="badge badge-primary">+3</span></li>
+                    </ul>
+                  </td>
+                  <td class="text-truncate">$8500</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<button type="button" class="btn btn-secondary" style="margin-left: 584px;" routerLink="/resume">View More
+  Details</button>

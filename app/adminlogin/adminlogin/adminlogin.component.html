@@ -1,0 +1,31 @@
+<div class="row">
+    <div class="col-12">
+        <div class="form-group" style="margin-left:600px; margin-top: 140px;">
+            <h1 style=" color: #d57ef9; margin-left: 24px; ">login page </h1>
+            <form [formGroup]="myform">
+                <mat-form-field appearance="fill" style="width:auto;"> <mat-label class="ps-3">Email Address</mat-label>
+                    <input matInput placeholder="Email Address" formControlName="Email"></mat-form-field>
+                <div style="color: #ea6153 ;font-size: 0.7rem;"
+                    *ngIf="!myform.controls['Email'].valid && (myform.controls['Email'].dirty||submitAttempt)">
+                    Enter a Email address
+                </div>
+                <div style="color: #ea6153 ;font-size: 0.7rem;" *ngIf="myform.controls['Email'].errors?.pattern">
+                    Enter a valid Email address
+                </div>
+                <br><br>
+                <mat-form-field appearance="fill" style="width:auto;">
+                    <mat-label class="ps-3">Password</mat-label>
+                    <input matInput type="Password" placeholder="Password" formControlName="password"> </mat-form-field>
+                <div style="color: #ea6153 ;font-size: 0.7rem;"
+                    *ngIf="!myform.controls['password'].valid && (myform.controls['password'].dirty||submitAttempt)">
+                    Enter a Password</div>
+                <br>
+                <mat-checkbox formControlName="checkbox"> Keep me logged in </mat-checkbox>
+            </form>
+            <div>
+                <button mat-raised-button color="primary" class="mt-0 grid-btn purple-btn me-4" (click)="Singin()"
+                    style="margin-left: 63px;">Sign in </button>
+            </div>
+        </div>
+    </div>
+</div>
